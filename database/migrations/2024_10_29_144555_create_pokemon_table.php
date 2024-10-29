@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('pokemon', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('type');
+            $table->tinyInteger('ps')->unsigned();
+            $table->tinyInteger('attack')->unsigned();
+            $table->tinyInteger('defense')->unsigned();
+            $table->string('strongest_move');
+            $table->string('species');
             $table->timestamps();
         });
     }
