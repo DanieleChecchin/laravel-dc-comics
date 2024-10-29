@@ -51,6 +51,9 @@
                                 <td>
                                     {{ $pokemon->species }}
                                 </td>
+                                <td>
+                                    <a class="btn btn-info" href="{{ route('pokemon.show', $pokemon->id) }}">Show</a>
+                                </td>
                             </tr>
                         @empty
                             <tr>

@@ -35,9 +35,10 @@ class PokemonController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Pokemon $pokemon)
+    public function show(string $id)
     {
-        //
+        $pokemon = Pokemon::findOrFail($id); //Se ce l'id restituisco il pokemon altrimenti 404 not found
+        return view('pokemons.show', compact('pokemon'));
     }
 
     /**

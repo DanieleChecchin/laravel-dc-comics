@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/pokemons', [PokemonController::class, 'index'])->name('pokemon-index');
+Route::get('/pokemons', [PokemonController::class, 'index'])->name('pokemon.index');
+Route::get('/pokemons/{id}', [PokemonController::class, 'show'])->name('pokemon.show');
