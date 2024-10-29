@@ -6,7 +6,7 @@
 
     <div class="container">
         <div class="row">
-            <form action="">
+            <form action="{{ route('pokemon.store') }}" method="POST">
                 @csrf
 
                 <h1 class="fw-bold my-5 fst-italic text-decoration-underline">Create a new Pokemon!</h1>

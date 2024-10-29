@@ -29,7 +29,11 @@ class PokemonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $formData = $request->all();
+
+        $pokemon = Pokemon::create($formData);  //Fillable
+
+        return redirect()->route('pokemon.show', ['id'=> $pokemon->id]);
     }
 
     /**

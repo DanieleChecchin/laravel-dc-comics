@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Pokemon extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name', 'type', 'ps', 'attack', 'defense', 'strongest_move', 'species'
+    ];
 }

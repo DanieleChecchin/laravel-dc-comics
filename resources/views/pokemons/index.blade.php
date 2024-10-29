@@ -11,6 +11,11 @@
                 </h1>
             </div>
             <div class="col-12">
+                <div class="my-3">
+                    <a href="{{ route('pokemon.create') }}" class="btn btn-primary">Create a new Pokemon</a>
+                </div>
+            </div>
+            <div class="col-12">
                 <table class="table table-hover border">
                     <thead>
                         <tr>
