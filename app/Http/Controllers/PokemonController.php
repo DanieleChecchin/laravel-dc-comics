@@ -21,7 +21,7 @@ class PokemonController extends Controller
      */
     public function create()
     {
-        //
+        return view('pokemons.create'); // pagina view con il form vuoto da compilare
     }
 
     /**
