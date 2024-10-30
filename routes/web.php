@@ -22,3 +22,6 @@ Route::get('/pokemons', [PokemonController::class, 'index'])->name('pokemon.inde
 Route::post('/pokemons', [PokemonController::class, 'store'])->name('pokemon.store');
 Route::get('/pokemons/create', [PokemonController::class, 'create'])->name('pokemon.create');
 Route::get('/pokemons/{id}', [PokemonController::class, 'show'])->name('pokemon.show');
+Route::get('/pokemons/{id}/edit', [PokemonController::class, 'edit'])->name('pokemon.edit');
+Route::put('/pokemons/{id}', [PokemonController::class, 'update'])->name('pokemon.update');
+

@@ -58,7 +58,8 @@
                                 </td>
                                 <td>
                                     <a class="btn btn-sm btn-info" href="{{ route('pokemon.show', $pokemon->id) }}">Show</a>
-                                    <a class="btn btn-sm btn-warning" href="">Edit</a>
+                                    <a class="btn btn-sm btn-warning"
+                                        href="{{ route('pokemon.edit', $pokemon->id) }}">Edit</a>
                                     <a class="btn btn-sm btn-danger" href="">Delete</a>
                                 </td>
                             </tr>
