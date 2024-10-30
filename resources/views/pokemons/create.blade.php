@@ -21,19 +21,19 @@
                 </div>
                 <div class="mb-3">
                     <label for="pokemon-ps" class="form-label">PS:</label>
-                    <input type="text" class="form-control" id="pokemon-ps" name="ps">
+                    <input type="number" class="form-control" id="pokemon-ps" name="ps">
                 </div>
                 <div class="mb-3">
                     <label for="pokemon-attack" class="form-label">Attack:</label>
-                    <input type="text" class="form-control" id="pokemon-attack" name="attack">
+                    <input type="number" class="form-control" id="pokemon-attack" name="attack">
                 </div>
                 <div class="mb-3">
                     <label for="pokemon-defense" class="form-label">Defense:</label>
-                    <input type="text" class="form-control" id="pokemon-defense" name="defense">
+                    <input type="number" class="form-control" id="pokemon-defense" name="defense">
                 </div>
                 <div class="mb-3">
                     <label for="pokemon-strongest-move" class="form-label">Strongest-move:</label>
-                    <input type="text" class="form-control" id="pokemon-strongest-move" name="strongest-move">
+                    <input type="text" class="form-control" id="pokemon-strongest-move" name="strongest_move">
                 </div>
                 <div class="mb-3">
                     <label for="pokemon-species" class="form-label">Species:</label>
