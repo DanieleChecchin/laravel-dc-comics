@@ -24,4 +24,5 @@ Route::get('/pokemons/create', [PokemonController::class, 'create'])->name('poke
 Route::get('/pokemons/{id}', [PokemonController::class, 'show'])->name('pokemon.show');
 Route::get('/pokemons/{id}/edit', [PokemonController::class, 'edit'])->name('pokemon.edit');
 Route::put('/pokemons/{id}', [PokemonController::class, 'update'])->name('pokemon.update');
+Route::delete('/pokemons/{id}', [PokemonController::class, 'destroy'])->name('pokemon.delete');
 
