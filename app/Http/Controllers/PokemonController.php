@@ -68,6 +68,16 @@ class PokemonController extends Controller
      */
     public function update(Request $request, string $id)
     {
+        $request->validate([
+            'name'=>'required|string|min:3|max:50',
+            'type'=>'required|string|min:5|max:70',
+            'ps'=>'required|numeric|min:10|max:255',
+            'attack'=>'required|numeric|min:10|max:255',
+            'defense'=>'required|numeric|min:10|max:255',
+            'strongest_move'=>'required|string|min:3|max:20',
+            'species'=>'required|string|min:5|max:50'
+        ]);
+
         $formData = $request->all();
         $pokemon = Pokemon::findOrFail($id);
         $pokemon->update($formData);
