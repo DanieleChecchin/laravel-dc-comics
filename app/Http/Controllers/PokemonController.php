@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StorePokemonRequest;
 use App\Models\Pokemon;
 use Illuminate\Http\Request;
 
@@ -27,19 +28,9 @@ class PokemonController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StorePokemonRequest $request)
     {
-        //Validazione
-        $request->validate([
-            'name'=>'required|string|min:3|max:50',
-            'type'=>'required|string|min:5|max:70',
-            'ps'=>'required|numeric|min:10|max:255',
-            'attack'=>'required|numeric|min:10|max:255',
-            'defense'=>'required|numeric|min:10|max:255',
-            'strongest_move'=>'required|string|min:3|max:20',
-            'species'=>'required|string|min:5|max:50'
-        ]);
-
+        $request->validate();
         $formData = $request->all();
         $pokemon = Pokemon::create($formData);  //Fillable
         return redirect()->route('pokemon.show', ['id'=> $pokemon->id]);
