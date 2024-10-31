@@ -40,6 +40,20 @@ class StorePokemonRequest extends FormRequest
             'defense.required' => 'La difesa è obbligatoria',
             'strongest_move.required' => 'La mossa migliore è obbligatoria',
             'species.required' => 'La specie è obbligatoria',
+            'name.min' => 'Il contenuto deve essere almeno di 3 caratteri',
+            'type.min' => 'Il contenuto deve essere almeno di 5 caratteri',
+            'ps.min' => 'Il contenuto deve essere almeno di 10 caratteri',
+            'attack.min' => 'Il contenuto deve essere almeno di 10 caratteri',
+            'defense.min' => 'Il contenuto deve essere almeno di 10 caratteri',
+            'strongest_move.min' => 'Il contenuto deve essere almeno di 3 caratteri',
+            'species.min' => 'Il contenuto deve contenere massimo 5 caratteri',
+            'name.max' => 'Il contenuto deve contenere massimo di 50 caratteri',
+            'type.max' => 'Il contenuto deve contenere massimo 70 caratteri',
+            'ps.max' => 'Il contenuto deve contenere massimo 255 caratteri',
+            'attack.max' => 'Il contenuto deve contenere massimo 255 caratteri',
+            'defense.max' => 'Il contenuto deve contenere massimo 255 caratteri',
+            'strongest_move.max' => 'Il contenuto deve contenere massimo 20 caratteri',
+            'species.max' => 'Il contenuto deve contenere massimo 50 caratteri'
         ];
     }
 }
